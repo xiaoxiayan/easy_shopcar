@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            cookie
+            会话跟踪技术
+            在当前网站发送请求时, 每一次都会携带cookie里面存储的信息, 如果cookie存储的是用户的基本信息,
+            每一次请求,后台都会获取到用户的信息, 也就能知道是哪一位用户发送的请求.
+
+            前端的cookie 不安全
+
+
+
+        */
+
+        // 设置cookie
+        // cookie path 设置路径, 只能在子文件或者子文件夹下面的子文件使用, 如果想让整个域名都使用, 只需要给路径设置成'/'根目录
+        // expires : 设置到期时间 时间对象
+        // max-age: 设置使用时间  以秒为单位 
+        // document.cookie = "username=xixi; max-age=600";
+        var date = new Date();
+        date.setDate(date.getDate() + 1);
+        // date = new Date(date.getTime() + 1 * 24 * 60 * 60 * 1000);
+        // document.cookie = "age=100; expires=" + date + ';';
+
+        // 清除cookie
+        // document.cookie = "age=100; max-age=0";
+
+
+
+        
+        
+    </script>
+</body>
+</html>

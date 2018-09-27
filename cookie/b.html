@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="cookie.js"></script>
+    <script>
+        var _cookie = new OperationCookie();
+        // _cookie.setItem('username', '123', 1);
+        _cookie.setItem('age', 18, 10);
+        // var username = _cookie.getItem('username');
+        // var age = _cookie.getItem('age')
+        var obj = _cookie.getItem();
+        for(var i in obj) {
+            console.log("属性名称" + i, "属性值:" + obj[i]);
+        }
+        // console.log(obj.age, obj.username);
+        
+    </script>
+</body>
+</html>
